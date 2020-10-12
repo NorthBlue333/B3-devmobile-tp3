@@ -1,6 +1,7 @@
 import Home from '../pages/Home'
+import Profil from '../pages/Profil/Profil'
 
-export type RouteName = 'list' | 'profile' | 'details'
+export type RouteName = 'list' | 'profil' | 'details'
 
 interface Route {
   name: RouteName
@@ -16,11 +17,11 @@ export const list: Route = {
   component: Home,
 }
 
-export const profile: Route = {
-  name: 'profile',
+export const profil: Route = {
+  name: 'profil',
   path: '/profile',
-  title: 'Profile',
-  component: Home,
+  title: 'Profil',
+  component: Profil,
 }
 
 export const details: Route = {
@@ -34,6 +35,6 @@ export const routes: {
   [key in RouteName]: Route
 } = {
   list,
-  profile,
+  profil,
   details,
 }
