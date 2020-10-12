@@ -23,3 +23,11 @@ export const details: Route = {
   path: '/details',
   title: 'Détails',
 }
+
+export const routes: {
+  [key in RouteName]: Route
+} = {
+  list,
+  profile,
+  details,
+}
